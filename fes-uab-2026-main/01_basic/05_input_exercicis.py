@@ -6,6 +6,9 @@
 # Exercici 1
 # Demana el nom d'un tècnic i el nom de la xarxa que està instal·lant.
 # Després, mostra un missatge amb aquesta informació.
+tecnic = input("Escriu el nom del tecnic: ")
+xarxa = input("Escriu el nom de la xarxa: ")
+print("EL tecnic", tecnic, "esta instal·lant la xarxa", xarxa)
 
 
 # Exercici 2
