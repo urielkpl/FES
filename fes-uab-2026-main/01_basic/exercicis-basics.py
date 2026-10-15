@@ -19,7 +19,11 @@ d = True
 e = None
 
 ### Completa aquí
-
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
 print("--------------")
 
 print("\nExercici 3: Conversió de tipus")
@@ -27,7 +31,9 @@ print("Converteix la cadena \"12345\" a un enter i després a un float.")
 print("Converteix el float 3.99 a un enter. Què passa?")
 
 ### Completa aquí
-
+cadena = "12345"
+enter = int(cadena)
+decimal = int(3.99)
 print("--------------")
 
 print("\nExercici 4: Variables")
@@ -39,7 +45,10 @@ print("Utilitza f-strings per imprimir una presentació.")
 #age = 38
 
 ### Completa aquí
-
+nombre = "Uriel"
+edat = int(20)
+alçada = float(1.7)
+print(f"Em dic {nombre}, tinc {edat} anys i faig {alçada} metres")
 print("--------------")
 
 print("\nExercici 5: Nombres")
@@ -49,6 +58,10 @@ print("3. Fes la divisió entera entre el nombre resultant i el nombre 2")
 print("4. El resultat hauria de ser 1")
 
 print("--------------")
+resultado = round(3,1415)/2
+print(f"Arrodonint el nombre pi dividit entre 2 ens queda: {resultado}")
+
+
 
 print("\nExercici 6: Conversor de temperatura")
 print("Demana a l'usuari una temperatura en graus Celsius.")
@@ -63,8 +76,13 @@ print("\nExercici 7: Calculadora de propina")
 print("Demana el total d'un compte i el percentatge de propina.")
 print("Calcula quant és la propina i el total final que s'ha de pagar.")
 print("Mostra els resultats amb 2 decimals.")
-
 ### Completa aquí
+
+compte = float(input("Escriu el compte: "))
+propina = float(input("Escriu el percentatge de propina: "))
+propina_final = float(compte * (propina/100))
+compte_final = compte * propina_final
+print(f"La propina serà de {propina_final} euros i el compte serà de {compte_final} euros")
 
 print("--------------")
 
