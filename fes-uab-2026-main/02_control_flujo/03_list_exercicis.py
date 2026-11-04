@@ -45,8 +45,16 @@ llista_nova = llista + llista
 # Donada una llista amb un nombre senar d'elements, extreu-ne l'element central
 # fent servir slicing.
 # Exemple: llista = [10, 20, 30, 40, 50] -> L'element central és 30
-
+print("\nEjercicio 5:")
+lista = [10, 20, 30, 40, 50]
+centro = len(lista) // 2
+print(lista[centro])
 # Exercici 6: Inversió parcial
 # Donada una llista, inverteix-ne només la primera meitat (fent servir slicing
 # i concatenació).
 # Exemple: llista = [1, 2, 3, 4, 5, 6] -> Resultat: [3, 2, 1, 4, 5, 6]
+print("\nEjercicio 6:")
+lista = [1, 2, 3, 4, 5, 6]
+mitad = len(lista) // 2
+lista_invertida = lista[:mitad][::-1] + lista[mitad:]
+print(lista_invertida)

@@ -40,6 +40,13 @@ else:
 # Un any és de traspàs si és divisible per 4, excepte si és divisible per 100
 # però no per 400.
 
+print("\nEjercicio 3:")
+año = int(input("Introduce un año: "))
+
+if (año % 4 == 0 and anio % 100 != 0) or anio % 400 == 0:
+    print(f"{año} es un año bisiesto.")
+else:
+    print(f"{año} no es un año bisiesto.")
 
 
 # Exercici 4: Classificar edats
@@ -49,7 +56,21 @@ else:
 # - Adolescent (13-17 anys)
 # - Adult (18-64 anys)
 # - Persona gran (65 anys o més)
+print("\nEjercicio 4:")
+edad = int(input("Introduce una edad: "))
 
+if 0 <= edad <= 2:
+    print("Bebé")
+elif 3 <= edad <= 12:
+    print("Niño")
+elif 13 <= edad <= 17:
+    print("Adolescente")
+elif 18 <= edad <= 64:
+    print("Adulto")
+elif edad >= 65:
+    print("Adulto mayor")
+else:
+    print("Edad no válida.")
 # Exercici 5: Qualitat del senyal Wi-Fi
 # Demana el nivell de senyal rebut (RSSI) en dBm i classifica la cobertura:
 # - -50 dBm o superior: excel·lent

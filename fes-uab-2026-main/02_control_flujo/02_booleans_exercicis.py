@@ -64,3 +64,16 @@ print(f"Cal avisar es: {cal_avisar}")
 # actiu, la contrasenya és correcta, el compte no està bloquejat i, a més,
 # el codi és correcte o el dispositiu és de confiança. Fes servir and, or i not.
 # Mostra'n el resultat.
+print("\nExercici 5:")
+compte_actiu = True
+contrasenya_correcta = True
+codi_correcte = False
+dispositiu_de_confiança = True
+compte_bloquejat = False
+accés_permes = (
+    compte_actiu
+    and contrasenya_correcta
+    and (codi_correcte or dispositiu_de_confiança)
+    and not compte_bloquejat
+)
+print(f"Accés permès: {accés_permes}")
